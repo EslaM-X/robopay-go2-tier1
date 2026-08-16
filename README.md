@@ -193,6 +193,16 @@ The image runs `verify_go2_tier1.sh` (every acceptance test, exit nonzero on
 failure) and is rebuilt from each `v*` tag by
 `.github/workflows/publish-docker-image.yml`.
 
+## Contributing
+
+Open source, licensed MIT. New skills, navigation features, and payment-gate
+hardening are welcome. Start with
+[CONTRIBUTING.md](CONTRIBUTING.md) and the
+[`good first issue`](https://github.com/EslaM-X/robopay-go2-tier1/labels/good%20first%20issue)
+label; every change must keep `bash simulation/verify_go2_tier1.sh` green.
+Please read the [code of conduct](CODE_OF_CONDUCT.md) and report vulnerabilities
+privately per [SECURITY.md](SECURITY.md).
+
 ## Authorship archive
 
 This repository is the **original authorship archive** of the Unitree Go2

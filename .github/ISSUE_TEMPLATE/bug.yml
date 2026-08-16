@@ -1,0 +1,61 @@
+name: Bug report
+description: Report a reproducible bug in the Go2 Tier-1 simulator
+title: "bug: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. A good bug report includes the exact way to
+        reproduce it offline — the test suite never requires network or keys.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear description of the unexpected behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: |
+        Paste a minimal script or test that reproduces the bug offline.
+        The simulator is fully offline-testable — please keep it that way.
+      placeholder: |
+        cd simulation/go2
+        python3 test_go2_control.py
+        # → AssertionError: pawLift ... expected
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Skill controller (simulation/go2)
+        - Payment gate (payment_gate.py)
+        - Zenoh link / tunnel (robopay_link.py)
+        - Obstacle navigation
+        - Sim-to-sim (PyBullet / Webots)
+        - Settlement (Base Sepolia)
+        - Registry profile (skills.yaml, functions.yaml)
+        - Documentation
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Python version, OS, and whether setup.sh completed.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I can reproduce this offline (no network, no API keys)
+          required: true
+        - label: I ran `bash simulation/verify_go2_tier1.sh` and this is unrelated to a known limitation
+          required: true
