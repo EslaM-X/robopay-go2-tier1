@@ -5,8 +5,9 @@ LABEL org.opencontainers.image.description="Unitree Go2 Tier-1 RoboPay simulator
 LABEL org.opencontainers.image.licenses="MIT"
 LABEL org.opencontainers.image.source="https://github.com/EslaM-X/robopay-go2-tier1"
 
-# git is required by simulation/setup.sh (sparse clone of mujoco_menagerie)
-RUN apt-get update && apt-get install -y --no-install-recommends git ca-certificates \
+# git is required by simulation/setup.sh (sparse clone of mujoco_menagerie);
+# build-essential is required to build pybullet's native extension on python:3.12-slim
+RUN apt-get update && apt-get install -y --no-install-recommends git ca-certificates build-essential \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /workspace
