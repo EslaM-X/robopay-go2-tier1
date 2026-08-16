@@ -1,5 +1,9 @@
 # Unitree Go2 Tier 1 — paid embodied skills in MuJoCo + PyBullet + Webots
 
+[![CI](https://github.com/EslaM-X/robopay-go2-tier1/actions/workflows/go2-simulation-tests.yml/badge.svg)](https://github.com/EslaM-X/robopay-go2-tier1/actions/workflows/go2-simulation-tests.yml)
+[![Docker](https://github.com/EslaM-X/robopay-go2-tier1/actions/workflows/publish-docker-image.yml/badge.svg)](https://github.com/EslaM-X/robopay-go2-tier1/actions/workflows/publish-docker-image.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 **Scope: simulator-only submission.** No physical robot is involved; the
 x402 payment gate and the wire contract are exercised end to end in peer-mode
 Zenoh, and on-chain settlement (Base Sepolia, EIP-3009) is exercised live and
