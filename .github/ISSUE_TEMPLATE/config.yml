@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+- name: Discussions
+  url: https://github.com/EslaM-X/robopay-go2-tier1/discussions
+  about: Ask questions and discuss the roadmap here.
+- name: Project documentation
+  url: https://github.com/EslaM-X/robopay-go2-tier1/blob/main/simulation/README.md
+  about: Simulation setup, verification, and evidence.

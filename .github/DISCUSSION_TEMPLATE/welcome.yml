@@ -1,0 +1,17 @@
+labels: [discussion]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Welcome to the robopay-go2-tier1 discussions
+
+        Paid embodied skills for the Unitree Go2 — MuJoCo + PyBullet + Webots,
+        x402 gate, live Base Sepolia settlement proofs.
+
+        - **Q&A** — ask anything about installing, running, or extending the simulator.
+        - **Ideas** — proposals for new skills, payment rules, or navigation features.
+        - **Show and tell** — share the paid-action runs you produce with it.
+        - **Feedback** — what gets in the way of using it in your RoboPay integration?
+
+        Before posting, skim the [README](../../README.md) and
+        [ROADMAP](../../ROADMAP.md).
