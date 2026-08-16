@@ -179,6 +179,20 @@ simulation/
 - `turn_to_face` uses a static-stability hip-abduction shuffle (honest
   residual error reported). `navigate_obstacle` uses static obstacles only.
 
+## Docker image
+
+The full reproducible environment (Python deps + pinned Go2 model assets +
+one-command verification) ships as a public container image:
+
+```sh
+docker pull ghcr.io/eslam-x/robopay-go2-tier1:latest
+docker run --rm ghcr.io/eslam-x/robopay-go2-tier1:latest
+```
+
+The image runs `verify_go2_tier1.sh` (every acceptance test, exit nonzero on
+failure) and is rebuilt from each `v*` tag by
+`.github/workflows/publish-docker-image.yml`.
+
 ## Authorship archive
 
 This repository is the **original authorship archive** of the Unitree Go2
